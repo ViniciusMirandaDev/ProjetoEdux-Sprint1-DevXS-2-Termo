@@ -113,3 +113,10 @@ CREATE TABLE Turma(
 	IdAlunoTurma INT FOREIGN KEY REFERENCES AlunoTurma (IdAlunoTurma),
 	IdProfessorTurma INT FOREIGN KEY REFERENCES ProfessorTurma (IdProfessorTurma)
 );
+
+ALTER TABLE ProfessorTurma ADD IdTurma INT FOREIGN KEY REFERENCES Turma (IdTurma);
+ALTER TABLE AlunoTurma ADD IdTurma INT FOREIGN KEY REFERENCES Turma (IdTurma);
+ALTER TABLE Curso ADD IdTurma INT FOREIGN KEY REFERENCES Turma (IdTurma);
+
+SELECT * FROM Categoria
+
