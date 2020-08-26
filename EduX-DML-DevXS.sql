@@ -30,7 +30,9 @@ INSERT INTO Instituicao (IdUsuario,Descricao,Nome,Logradouro,CEP,UF,Cidade)
 INSERT INTO Post (IdUsuario,Curtidas,Descricao,DataPost)
 			
 			VALUES
-			(1,400,'Lorem ipsum dolor sit amet','2004-06-24T10:00:00');
+			(1,400,'Lorem ipsum dolor sit amet','2004-06-24T10:00:00'),
+			(1,100,'Lorem ipsum dolor sit amet','2020-06-24T10:00:00'),
+			(2,200,'Lorem ipsum dolor sit amet','2020-03-24T10:00:00');
 
 INSERT INTO ProfessorTurma (IdUsuario,Descricao,RegistroTrabalho,CargaHoraria)
 			
@@ -65,12 +67,16 @@ INSERT INTO ObjetivoAluno (IdAlunoTurma,DataEntrega,Nota)
 
 INSERT INTO Categoria (TipoCategoria)
 	VALUES
-	('Critico');
-
+	('Critico'),
+	('Desejável'),
+	('Oculto');
+	
 INSERT INTO Objetivo (IdCategoria,Descricao,DataEntrega,DataInicio)	
 			
 			VALUES
-			(1,'Lorem ipsum','2020-06-24T10:00:00','2020-06-24T10:00:00');
+			(1,'Lorem ipsum','2020-06-24T10:00:00','2020-06-24T10:00:00'),
+			(2,'Lorem ipsum','2020-06-24T10:00:00','2020-06-24T10:00:00'),
+			(3,'Lorem ipsum','2020-06-24T10:00:00','2020-06-24T10:00:00');
 
 UPDATE Turma
 	SET IdAlunoTurma=1
@@ -88,8 +94,10 @@ UPDATE ObjetivoAluno
 	SET IdObjetivo=1
 	WHERE IdObjetivoAluno=1;
 
-
-
-
+INSERT INTO ObjetivoAluno (IdAlunoTurma,DataEntrega,Nota,IdObjetivo)
+			
+			VALUES
+			(1,'2020-06-24T10:00:00',8,2),
+			(1,'2020-06-24T10:00:00',5.73,3);
 
 
