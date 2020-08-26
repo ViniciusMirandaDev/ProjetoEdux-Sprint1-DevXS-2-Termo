@@ -70,4 +70,4 @@ SELECT * FROM TipoUsuario;
 SELECT * FROM Turma;
 SELECT * FROM Usuario;
 		
-
+--Finalizado

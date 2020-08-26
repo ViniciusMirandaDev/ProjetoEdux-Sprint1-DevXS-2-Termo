@@ -101,3 +101,4 @@ INSERT INTO ObjetivoAluno (IdAlunoTurma,DataEntrega,Nota,IdObjetivo)
 			(1,'2020-06-24T10:00:00',5.73,3);
 
 
+--Finalizado
